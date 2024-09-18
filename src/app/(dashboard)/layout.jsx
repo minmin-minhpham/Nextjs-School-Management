@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Menu from "@/components/Menu";
+import Navbar from "@/components/Navbar";
 
 export default function Layout({ children }) {
   return (
@@ -19,6 +20,7 @@ export default function Layout({ children }) {
 
       {/* RIGHT */}
       <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] overflow-scroll flex flex-col bg-[#F7F8FA]">
+        <Navbar />
         {children}
       </div>
     </div>
